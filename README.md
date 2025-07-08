@@ -86,3 +86,18 @@ http://your-help-page-bucket.s3-website-<region>.amazonaws.com
    ```
 4. 🔁 Replace your-help-page-bucket with your actual bucket name.
 5. Click Save to apply the policy.
+
+
+---
+
+## 🚀 Step 4: Add CloudFront for Global Speed
+
+1. Go to the **AWS Console** → **CloudFront** → click **Create Distribution**.
+2. Under **Origin domain**, paste your **S3 static website endpoint URL**.
+   - ⚠️ **Important**: Use the **website endpoint** (e.g., `http://your-bucket.s3-website-us-east-1.amazonaws.com`), **not** the bucket ARN.
+3. Leave the **default settings** as is.
+4. Click **Create Distribution**.
+
+---
+
+### ✅ After a few minutes, you’ll get a CloudFront URL like:
