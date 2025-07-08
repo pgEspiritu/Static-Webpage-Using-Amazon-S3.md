@@ -165,7 +165,11 @@ Open your CloudFront URL in a browser, and it will serve your `faq.html` from S3
 
 ---
 
-## 📣 Step 5: Share It!
+## 📸 Project Screenshots [CLICK HERE](Project-Screenshots.md)
+
+---
+
+## 📣 Share It!
 
 Add your **CloudFront URL** to:
 
