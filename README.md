@@ -63,3 +63,26 @@ Example:
 ```html
 http://your-help-page-bucket.s3-website-<region>.amazonaws.com
 ```
+
+---
+
+## 🔐 Step 3: Make the Bucket Public
+
+1. In the AWS Console, go to your **S3 bucket** → **Permissions** tab.
+2. Scroll to **Bucket Policy** and click **Edit**.
+3. Paste the following JSON policy:
+
+   ```json
+   {
+     "Version": "2012-10-17",
+     "Statement": [{
+       "Sid": "PublicReadGetObject",
+       "Effect": "Allow",
+       "Principal": "*",
+       "Action": "s3:GetObject",
+       "Resource": "arn:aws:s3:::your-help-page-bucket/*"
+     }]
+   }
+   ```
+4. 🔁 Replace your-help-page-bucket with your actual bucket name.
+5. Click Save to apply the policy.
