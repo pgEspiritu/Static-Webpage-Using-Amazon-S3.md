@@ -92,12 +92,72 @@ http://your-help-page-bucket.s3-website-<region>.amazonaws.com
 
 ## 🚀 Step 4: Add CloudFront for Global Speed
 
-1. Go to the **AWS Console** → **CloudFront** → click **Create Distribution**.
-2. Under **Origin domain**, paste your **S3 static website endpoint URL**.
-   - ⚠️ **Important**: Use the **website endpoint** (e.g., `http://your-bucket.s3-website-us-east-1.amazonaws.com`), **not** the bucket ARN.
-3. Leave the **default settings** as is.
-4. Click **Create Distribution**.
+Amazon CloudFront is a **Content Delivery Network (CDN)** that speeds up your site by distributing your content to edge locations around the world. This means your `faq.html` will load faster for users no matter where they are.
 
 ---
 
-### ✅ After a few minutes, you’ll get a CloudFront URL like:
+#### 1. Go to the CloudFront Console
+- In the AWS Console, search for **CloudFront** in the search bar.
+- Click **CloudFront** to open the service.
+- Click the **Create Distribution** button.
+
+---
+
+#### 2. Configure the Origin Settings
+- Under **Origin domain**, click the dropdown and **paste your S3 static website endpoint URL**.  
+  Example:  
+ ```html
+  http://your-help-page-bucket.s3-website-us-east-1.amazonaws.com
+ ```
+
+> ⚠️ **Important:** Do **not** use the default S3 bucket ARN shown in the list (e.g., `your-help-page-bucket.s3.amazonaws.com`)  
+> Instead, use the **static website endpoint** that looks like `http://...s3-website-...`.
+
+- Keep **Origin path** blank.
+
+- Leave **Origin access control settings** as default (no OAC/OAI needed for public static hosting).
+
+---
+
+#### 3. Default Cache Behavior Settings
+- Leave most default options as is.
+- **Viewer Protocol Policy**: Change to **Redirect HTTP to HTTPS** (optional, for secure access).
+- **Allowed HTTP Methods**: Leave as **GET, HEAD**.
+- **Caching**: Leave default unless you want custom caching rules.
+
+---
+
+#### 4. Distribution Settings
+- **Price class**: You may choose **Use only U.S., Canada and Europe** for lower cost or **Use all edge locations** for maximum reach.
+- **Alternate domain name (CNAME)**: Leave blank for now unless you plan to use a custom domain.
+- **Custom SSL certificate**: Leave as **Default CloudFront certificate** for now (you'll get an HTTPS CloudFront URL).
+
+- Click **Create Distribution**.
+
+---
+
+#### 5. Wait for Deployment
+- You’ll see your new distribution listed.
+- **Status** will show as “In Progress” – wait a few minutes for it to deploy.
+- Once **Status** becomes “Deployed”, copy the **CloudFront Domain Name**.  
+Example:
+  ```html
+  https://d1234abc.cloudfront.net
+  ```
+
+---
+
+### ✅ You now have a CDN-accelerated, HTTPS-secured website link:
+Open your CloudFront URL in a browser, and it will serve your `faq.html` from S3 via CloudFront.
+
+---
+
+### 🌟 Benefits of Using CloudFront
+- ✅ **Faster Load Times** globally due to edge caching.
+- ✅ **HTTPS Support** out-of-the-box.
+- ✅ **Scalable and Reliable** — handles high traffic efficiently.
+- ✅ **Cleaner Public URL** for sharing (vs. long S3 URLs).
+
+---
+
+
