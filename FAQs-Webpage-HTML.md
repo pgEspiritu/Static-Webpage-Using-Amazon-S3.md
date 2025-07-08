@@ -72,7 +72,7 @@
 
   <footer>
     This site is hosted using <strong>AWS S3 + CloudFront</strong><br>
-    &copy; 2025 YourCompanyName. All rights reserved.
+    &copy; 2025 Paolo Gio Espiritu - Cloud Engineer. All rights reserved.
   </footer>
 
 </body>
