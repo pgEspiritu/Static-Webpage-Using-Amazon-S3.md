@@ -161,4 +161,33 @@ Open your CloudFront URL in a browser, and it will serve your `faq.html` from S3
 
 ---
 
+## ❌ Access Denied Error (CloudFront + S3) - [TROUBLESHOOTING GUIDE](Access-Troubleshooting-Guide.md)
 
+---
+
+## 📣 Step 5: Share It!
+
+Add your **CloudFront URL** to:
+
+- 🔗 **LinkedIn** post  
+- 👨‍💻 **GitHub** profile or project README  
+- 📄 **Resume** under "Mini Projects"  
+- 🎯 **Freelancer/portfolio** website  
+
+---
+
+## 🧠 What You Just Proved
+
+✅ Matched AWS services to a real-world use case  
+✅ Built and secured a static website  
+✅ Understood how **S3 + CloudFront** work together  
+✅ Delivered a **cloud-native mini project**
+
+---
+
+## 💡 Bonus Ideas
+
+🎨 Add **CSS** for visual polish  
+📱 Make the page **mobile responsive**  
+🛍️ Convert into a **product landing page**  
+📚 Use for **documentation or onboarding guides**
