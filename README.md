@@ -169,18 +169,7 @@ Open your CloudFront URL in a browser, and it will serve your `faq.html` from S3
 
 ---
 
-## 📣 Share It!
-
-Add your **CloudFront URL** to:
-
-- 🔗 **LinkedIn** post  
-- 👨‍💻 **GitHub** profile or project README  
-- 📄 **Resume** under "Mini Projects"  
-- 🎯 **Freelancer/portfolio** website  
-
----
-
-## 🧠 What You Just Proved
+## 🧠 I able to
 
 ✅ Matched AWS services to a real-world use case  
 ✅ Built and secured a static website  
