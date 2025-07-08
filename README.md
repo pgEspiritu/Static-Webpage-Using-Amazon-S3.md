@@ -4,10 +4,10 @@
 
 ## ✅ Step 1: Write Your FAQ Page
 
-### 1. Open your editor (VS Code or Notepad)
-### 2. Create and save this as `faq.html`:
+1. Open your editor (VS Code or Notepad)
+2. Create and save this as `faq.html`: [**HTML Code**](FAQs-Webpage-HTML.md)
 
-[**HTML Code**](FAQs-Webpage-HTML.md)
+---
 
 ## ☁️ Step 2: Upload It to an S3 Bucket
 
