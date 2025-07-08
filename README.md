@@ -11,12 +11,6 @@
 
 ## ☁️ Step 2: Upload It to an S3 Bucket
 
-# 🌐 Host `faq.html` as a Static Website on AWS S3
-
-## 🪜 Step-by-Step Instructions
-
----
-
 ### 1. Sign in to the AWS Console
 - Visit: [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
 - Log in with your AWS account.
@@ -64,4 +58,8 @@
 - Still under **Static website hosting**, copy the **Bucket website endpoint** URL.
 - This will be your temporary public website link.
 
-Example:
+Example: 
+
+```html
+http://your-help-page-bucket.s3-website-<region>.amazonaws.com
+```
