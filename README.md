@@ -112,6 +112,7 @@ Amazon CloudFront is a **Content Delivery Network (CDN)** that speeds up your si
 
 > ⚠️ **Important:** Do **not** use the default S3 bucket ARN shown in the list (e.g., `your-help-page-bucket.s3.amazonaws.com`)  
 > Instead, use the **static website endpoint** that looks like `http://...s3-website-...`.
+> If error occurs, direct connect the s3 by clicking `browse S31, then find the S3 Bucket where the faq.html stored
 
 - Keep **Origin path** blank.
 
